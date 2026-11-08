@@ -1,0 +1,149 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1 {
+    color: darkblue;
+}
+
+p {
+    max-width: 700px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.gallery img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+nav {
+margin: 25px;
+}
+
+nav a {
+background-color: darkblue;
+color: white;
+padding: 12px 20px;
+margin: 8px;
+border-radius: 10px;
+text-decoration: none;
+display: inline-block;
+}
+ /* Beautiful vacation website design */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eaf8ff, #ffffff);
+  color: #24364b;
+  margin: 0;
+  text-align: center;
+  line-height: 1.7;
+}
+
+h1 {
+  background: linear-gradient(120deg, #0077b6, #00b4d8);
+  color: white;
+  padding: 65px 20px;
+  margin: 0;
+  font-size: clamp(30px, 5vw, 55px);
+  text-transform: capitalize;
+}
+
+h2 {
+  color: #0077b6;
+  font-size: 30px;
+  margin-top: 45px;
+}
+
+p {
+  font-size: 18px;
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+nav {
+  padding: 15px;
+}
+
+nav a {
+  background: linear-gradient(120deg, #0077b6, #00b4d8);
+  color: white;
+  border-radius: 30px;
+  padding: 13px 24px;
+  box-shadow: 0 4px 12px #0077b633;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #023e8a;
+  transform: translateY(-3px);
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 20px;
+  margin: 12px;
+  box-shadow: 0 8px 25px #00000025;
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.04);
+}
+
+#gallery, #waterpark {
+  padding: 25px 15px;
+}
+
+#waterpark {
+  background: #dff5ff;
+  margin-top: 35px;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    padding: 10px 15px;
+    margin: 5px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
+#extraGallery {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 15px;
+
+}
+
+#extraGallery img {
+
+  width: 200px;
+
+  height: 160px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+
+  cursor: pointer;
+
+}

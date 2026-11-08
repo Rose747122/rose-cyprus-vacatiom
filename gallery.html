@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Cyprus Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Our Family Vacation Gallery</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+  <div class="gallery">
+    <img src="images/family.jpeg" alt="Family vacation">
+    <img src="images/kids.jpeg" alt="Kids">
+    <img src="images/hotel.jpg" alt="Hotel">
+    <img src="images/park.jpg" alt="Waterpark">
+    <img src="images/park1.jpeg" alt="Water slides">
+  </div>
+  <style>
+.gallery img {
+  cursor: pointer;
+}
+#bigPhoto {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+#bigPhoto img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+}
+#closePhoto {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+</style>
+
+<div id="bigPhoto">
+  <span id="closePhoto">&times;</span>
+  <img id="selectedPhoto" alt="Enlarged vacation photo">
+</div>
+
+
+<section class="new-photos">
+<h2>More Beautiful Memories 📸</h2>
+<div id="extraGallery" class="gallery">
+<img src="images/water1.jpeg" alt="Vacation photo 1" onclick="document.getElementById('selectedPhoto').src=this.src;document.getElementById('bigPhoto').style.display='flex'">
+<img src="images/water2.jpeg" alt="Vacation photo 2" onclick="document.getElementById('selectedPhoto').src=this.src;document.getElementById('bigPhoto').style.display='flex'">
+<img src="images/water3.jpeg" alt="Vacation photo 3" onclick="document.getElementById('selectedPhoto').src=this.src;document.getElementById('bigPhoto').style.display='flex'">
+<img src="images/water4.jpeg" alt="Vacation photo 4" onclick="document.getElementById('selectedPhoto').src=this.src;document.getElementById('bigPhoto').style.display='flex'">
+<img src="images/water5.jpeg" alt="Vacation photo 5" onclick="document.getElementById('selectedPhoto').src=this.src;document.getElementById('bigPhoto').style.display='flex'">
+<img src="images/water6.jpeg" alt="Vacation photo 6" onclick="document.getElementById('selectedPhoto').src=this.src;document.getElementById('bigPhoto').style.display='flex'">
+<img src="images/water7.jpeg" alt="Vacation photo 7" onclick="document.getElementById('selectedPhoto').src=this.src;document.getElementById('bigPhoto').style.display='flex'">
+<img src="images/water8.jpeg" alt="Vacation photo 8" onclick="document.getElementById('selectedPhoto').src=this.src;document.getElementById('bigPhoto').style.display='flex'">
+<img src="images/water9.jpeg" alt="Vacation photo 9" onclick="document.getElementById('selectedPhoto').src=this.src;document.getElementById('bigPhoto').style.display='flex'">
+<img src="images/water10.jpeg" alt="Vacation photo 10" onclick="document.getElementById('selectedPhoto').src=this.src;document.getElementById('bigPhoto').style.display='flex'">
+<img src="images/water11.jpeg" alt="Vacation photo 11" onclick="document.getElementById('selectedPhoto').src=this.src;document.getElementById('bigPhoto').style.display='flex'">
+</div>
+</section>
